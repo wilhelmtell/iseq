@@ -2,8 +2,20 @@
 
 Determine if all input lines are identical.
 
-iseq takes its input from stdin and sends its output to stdout. If all input
-lines are identical it outputs "yes"; otherwise it outputs "no".
+
+ Synopsis
+
+iseq [inputfile [outputfile]]
+
+inputfile can be "-", in which case input is taken from stdin. Similarly,
+outputfile can be "-" for stdout.
+
+
+ Description
+
+By default iseq takes its input from stdin and sends its output to stdout. If
+all input lines are identical iseq outputs "yes"; otherwise it outputs "no".
+
 
  Example Usage
 
