@@ -15,6 +15,10 @@ int main(int argc, char* argv[])
             return 0;
         }
     }
+    if( cin.bad() ) {
+        cerr << "Error processing input\n";
+        return 1;
+    }
     cout << "yes" << endl;
     return 0;
 }
