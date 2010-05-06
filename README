@@ -1,3 +1,13 @@
  iseq
 
 Determine if all input lines are identical.
+
+iseq takes its input from stdin and sends its output to stdout. If all input
+lines are identical it outputs "yes"; otherwise it outputs "no".
+
+ Example Usage
+
+$ sha1sum README Makefile main.cc |cut -d' ' -f1 |iseq 
+no
+$ sha1sum README README |cut -d' ' -f1 |iseq 
+yes
